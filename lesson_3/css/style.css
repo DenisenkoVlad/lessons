@@ -1,0 +1,51 @@
+h1 {
+	color: rgb(250, 184, 99);
+}
+h3 {
+	color: rgb(241, 4, 4);
+}
+ol li {
+	color: rgb(3, 161, 161);
+}
+.link {
+	color: rgb(1, 226, 151);
+}
+.link.brown {
+	color: rgb(168, 47, 47);
+}
+section.begin {
+	color: rgb(81, 81, 226);
+}
+.begin > p {
+	color: rgb(178, 116, 236);
+}
+.main ~ .footer {
+	color: rgb(34, 207, 57);
+}
+.conclusion > h2 {
+	color: rgb(184, 89, 66);
+}
+#rules {
+	color: rgb(70, 4, 133);
+}
+#begin + section {
+	color: red;
+}
+.picture + p {
+	color: rgb(162, 236, 77);
+}
+.yellow {
+	color: yellow;
+}
+.blue {
+	color: blue;
+}
+.red {
+	color: red;
+}
+.orange {
+	color: orange;
+}
+.green {
+	color: green;
+}
