@@ -1,0 +1,68 @@
+@import "null.css";
+@import "lato.css";
+@import "larsseit.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+
+body {
+	font-family: "larsseit";
+}
+
+.header {
+	margin: 0px 0px 15px 0px;
+}
+.header__title {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.header__title,
+.main__subtitle {
+	font-family: "lato";
+	font-weight: 900;
+}
+.header__list-item > a {
+	color: blue;
+}
+/* перебивает нижнее */
+.header__list-item {
+	font-size: 20px;
+	color: red;
+}
+.main {
+	margin: 0px 0px 15px 0px;
+}
+.main img {
+	max-width: 300px;
+}
+main > h2.main__subtitle {
+	font-size: 20px;
+}
+/* перебивает нижнее */
+main > .main__subtitle {
+	font-size: 10px;
+}
+p ~ div.quote {
+	color: green;
+}
+/* перебивает нижнее */
+div.quote {
+	color: orange;
+}
+/* перебивает нижнее */
+.quote {
+	text-decoration: underline;
+	color: brown;
+}
+.footer__title {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.footer__list li a {
+	font-family: "roboto";
+	color: blue;
+}
+/* перебивает нижнее */
+.footer__list > li.footer__list-item {
+	font-family: "roboto";
+	color: orange;
+}

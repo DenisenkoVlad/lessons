@@ -1,0 +1,7 @@
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/larsseit/Larsseit-Regular.woff2") format("woff2"), url("../fonts/larsseit/Larsseit-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
