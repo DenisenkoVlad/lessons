@@ -1,0 +1,237 @@
+@import "null.css";
+
+body {
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	background-color: rgb(105, 104, 104);
+}
+.wrapepr {
+	min-height: 100%;
+	overflow: hidden;
+}
+[class*="__container"] {
+	max-width: 800px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+.header {
+	margin-bottom: 20px;
+}
+.block-position {
+	margin-bottom: 20px;
+}
+.block-position > * {
+	display: inline-block;
+	background-color: green;
+	color: #fff;
+	text-align: center;
+	width: 200px;
+	max-height: 40px;
+}
+.block-position > *:not(:last-child) {
+	margin-right: 80px;
+}
+.block-left {
+	margin: 0px;
+}
+.block-center {
+	margin: 0px auto;
+}
+.block-right {
+	margin: 0px 0px 0px auto;
+}
+.paddings {
+	margin-bottom: 20px;
+}
+.paddings > * {
+	margin: 0px auto;
+}
+.block-outside {
+	width: 300px;
+	min-height: 100px;
+	background-color: rgb(91, 91, 253);
+	padding-top: 30px;
+	padding-right: 40px;
+	padding-bottom: 50px;
+	padding-left: 60px;
+}
+.block-inside {
+	width: 100%;
+	height: 100%;
+	background-color: green;
+}
+.overflow {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+.overflow > * {
+	color: black;
+	background-color: #fff;
+	height: 400px;
+	flex: 0 0 20%;
+}
+.overflow-visible {
+	overflow: visible;
+}
+.overflow-hidden {
+	overflow: hidden;
+}
+.overflow-scroll {
+	overflow: scroll;
+}
+.overflow-auto {
+	overflow: auto;
+}
+.displays {
+	margin-bottom: 20px;
+	font-size: 0;
+}
+.displays > * {
+	font-size: 20px;
+	margin-bottom: 5px;
+	background-color: green;
+}
+.inline-block {
+	display: inline-block;
+	height: 30px;
+	border: 1px solid #000;
+}
+.none {
+	height: 30px;
+	display: none;
+}
+.borders {
+	margin-bottom: 20px;
+}
+.borders > * {
+	width: 300px;
+	margin: 0px auto;
+	margin-bottom: 5px;
+}
+.solid {
+	border: 3px solid #000;
+}
+.dotted {
+	border: 3px dotted #000;
+}
+.dashed {
+	border: 3px dashed #000;
+}
+.double {
+	border: 5px double #000;
+}
+.outline {
+	margin-bottom: 20px;
+}
+.outline-label {
+	margin-bottom: 5px;
+}
+.outline-label span {
+	font-weight: 900;
+	color: rgb(156, 0, 0);
+}
+.outline a {
+	display: inline-block;
+	margin-right: 10px;
+	border-radius: 10px;
+	padding: 0px 5px;
+}
+.outline a:focus {
+	outline: none;
+	box-shadow: 0 0 15px blue;
+}
+.border-radius {
+	margin-bottom: 20px;
+}
+.border-radius-label {
+	margin-bottom: 5px;
+}
+.border-radius-label ~ * {
+	background-color: rgb(68, 68, 194);
+	width: 100px;
+	margin: 0px auto 5px auto;
+	padding: 10px;
+}
+.soft {
+	border-radius: 5px;
+}
+.medium {
+	border-radius: 15px;
+}
+.hard {
+	border-radius: 30px;
+}
+.circle {
+	width: 100px;
+	height: 100px;
+	padding-top: 40px;
+	border-radius: 50%;
+}
+.box-shadow {
+	margin-bottom: 20px;
+}
+.box-shadow-label {
+	margin-bottom: 5px;
+}
+.box-shadow-label ~ * {
+	color: black;
+	display: inline-block;
+	background-color: rgb(245, 245, 153);
+	padding: 10px 20px;
+}
+.box-shadow-label ~ *:not(:last-child) {
+	margin-right: 70px;
+}
+.box-shadow-normal {
+	box-shadow: 5px 5px 5px 5px green;
+}
+.box-shadow-inset {
+	box-shadow: inset 5px 5px 5px 5px green;
+}
+.box-shadow-multi-shadow {
+		box-shadow: 5px 5px 5px 5px blue, inset 5px 5px 5px 5px red;
+}
+.disable-blocks {
+	margin-bottom: 30px;
+}
+.disable-blocks-label {
+	margin-bottom: 5px;
+	font-size: 30px;
+}
+.tutorial {
+	display: flex;
+	justify-content: space-between;
+}
+[class*="-tutorial"] {
+	background-color: #fff;
+	color: black;
+	width: 200px;
+	height: 200px;
+}
+.opacity-half-tutorial {
+	opacity: 0.5;
+}
+.opacity-nil-tutorial {
+	opacity: 0;
+}
+.opacity-nil-tutorial a {
+	display: block;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.visibility-hidden-tutorial {
+	visibility: hidden;
+}
+.visibility-hidden-tutorial a {
+	display: block;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.display-none-tutorial {
+	display: none;
+}
+[class*="-next-block"] {
+	background-color: green;
+}
