@@ -1,0 +1,135 @@
+@import "null.css";
+
+body {
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	background-color: rgb(105, 104, 104);
+}
+.wrapepr {
+	min-height: 100%;
+	overflow: hidden;
+}
+[class*="__container"] {
+	max-width: 800px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+.header {
+	margin-bottom: 20px;
+}
+.page {
+	margin-bottom: 20px;
+}
+.page__container > *{
+	margin-bottom: 15px;
+}
+div [class*="__label"] {
+	text-transform: uppercase;
+}
+.bg-color__text {
+	background-color: #794f45;
+}
+.bg-gradient__label ~ * {
+	display: inline-block;
+	width: 200px;
+	padding: 10px;
+}
+.bg-gradient__label ~ *:not(:last-child){
+	margin-right: 20px;
+}
+.bg-gradient__text1 {
+	background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(138, 7, 133, 1) 35%, rgba(0, 212, 255, 1) 100%);;
+}
+.bg-gradient__text2 {
+	background-image: linear-gradient(90deg, rgba(122, 1, 1, 1) 0%, rgba(138, 135, 7, 1) 35%, rgba(160, 224, 237, 1) 100%);;
+}
+.bg-gradient__text3 {
+	background-image: radial-gradient(circle, rgba(122, 46, 1, 1) 0%, rgba(8, 138, 7, 1) 35%, rgba(223, 160, 237, 0.5504740168539326) 100%);;
+}
+.bg-image__case {
+	height: 200px;
+	background-image: url('../img/dog2.jpg');
+}
+.bg-repeat__label ~ * {
+	display: inline-block;
+	width: 180px;
+	height: 180px;
+}
+.bg-repeat__label ~ *:not(:last-child) {
+	margin-right: 10px;
+}
+.bg-repeat__repeat {
+	background: #fff url('../img/dog1.jpg') 0 0 / 50px;
+}
+.bg-repeat__no-repeat {
+	color: #000;
+	background: #fff url('../img/dog1.jpg') 0 0 / 50px no-repeat;
+}
+.bg-repeat__repeat-x {
+	background: #fff url('../img/dog1.jpg') 0 0 / 50px repeat-x;
+}
+.bg-repeat__repeat-y {
+	color: #000;
+	background: #fff url('../img/dog1.jpg') 0 0 / 50px repeat-y;
+}
+.bg-pos__label ~ * {
+	color: #000;
+	display: inline-block;
+	width: 180px;
+	height: 180px;
+	margin-right: 10px;
+	background: #fff url('../img/dog2.jpg') 0 0 / 70px no-repeat;
+}
+.bg-pos__1 {
+	background-position: 0 0;
+}
+.bg-pos__2 {
+	background-position: 50% 0;
+}
+.bg-pos__3 {
+	background-position: 100% 0;
+}
+.bg-pos__4 {
+	background-position: 50%;
+}
+.bg-pos__5 {
+	background-position: center bottom;
+}
+.bg-pos__6 {
+	background-position: right center;
+}
+.bg-att__label ~ * {
+	height: 500px;
+}
+.bg-att__scroll {
+	background: url('../img/dog1.jpg') center / cover no-repeat;
+}
+.bg-att__fixed {
+	background: url('../img/dog2.jpg') 0 0 / cover no-repeat fixed;
+}
+.bg-size__label ~ * {
+	display: inline-block;
+	height: 170px;
+	width: 170px;
+	margin-right: 10px;
+}
+.bg-size__case1 {
+	background: #fff url('../img/dog1.jpg') 0 0 / auto auto no-repeat;
+}
+.bg-size__case2 span {
+	color: #000;
+}
+.bg-size__case2 {
+	background: #fff url('../img/dog1.jpg') 0 0 / 100px 100px no-repeat;
+}
+.bg-size__case3 {
+	background: #fff url('../img/dog1.jpg') 0 0 / contain no-repeat;
+}
+.bg-size__case4 {
+	background: #fff url('../img/dog1.jpg') 0 0 / cover no-repeat;
+}
+.multi-bg__case {
+	height: 600px;
+	background: url('../img/dog2.jpg') left / 45% 90% no-repeat,  url('../img/dog1.jpg') right / 45% 90% no-repeat, radial-gradient(circle, rgba(122, 46, 1, 1) 0%, rgba(8, 138, 7, 1) 35%, rgba(223, 160, 237, 0.5504740168539326) 100%);
+}
