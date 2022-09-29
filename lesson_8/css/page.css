@@ -1,0 +1,744 @@
+@import "null.css";
+
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #000;
+	text-align: center;
+	font-size: 20px;
+	background-color: rgb(197, 197, 197);
+}
+.wrapepr {
+	min-height: 100%;
+	overflow: hidden;
+}
+[class*="__container"] {
+	max-width: 1030px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+.header {
+	margin-bottom: 20px;
+}
+.page {
+	margin-bottom: 20px;
+}
+.page__container > *:not(:last-child){
+	margin-bottom: 15px;
+}
+.tab__title {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.tab__flex {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	justify-content: space-between;
+}
+.tab__flex > * {
+	flex: 0 1 30%;
+}
+.tab__block [class*="__label-"] {
+	display: block;
+	padding: 5px;
+	background-color: #77608d;
+	border-radius: 10px 10px 0 0;
+}
+.tab__block [class*="__label-"]:active {
+	box-shadow: 0px 0px 5px 5px orange;
+}
+.tab__block [class*="__label-"] + * {
+	background-color: #b1b939;
+	padding: 15px;
+	display: none;
+	border-radius: 0 0 10px 10px;
+}
+.tab__block [class*="__label-"] + *:target {
+	display: block;
+}
+.tab__content-6 {
+	max-width: 300px;
+	height: 250px;
+	background: url('../img/memes/wrong.png') 100% 90% / 100px no-repeat, url('../img/memes/boy.jpg') center / cover no-repeat;
+}
+.hover__label {
+	font-weight: 24;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.child {
+	display: flex;
+	column-gap: 30px;
+}
+.child__title {
+	padding: 15px;
+	flex: 0 1 25%;
+	background-color: #794f45;
+	color: #fff;
+	border-radius: 20px;
+	font-size: 24px;
+	font-weight: 700;
+	align-self: start;
+	display: block;
+	transition: all 0.2s ease 0s;
+}
+.child__title:hover {
+	box-shadow: 0px 0px 2px 2px brown, inset 0px 0px 5px 7px brown;
+}
+.child__title:active {
+	box-shadow: 0px 0px 10px 10px red;
+}
+.child__tab {
+	visibility: hidden;
+	flex: 0 1 75%;
+	display: flex;
+	column-gap: 10px;
+}
+.child__tab > * {
+	flex: 0 1 50%;
+}
+.child__tab:target {
+	visibility: visible;
+}
+.child__subtitle-1 {
+	padding: 15px;
+	background-color: #7A956B;
+	border-radius: 20px 20px 0 0;
+	font-weight: 700;
+}
+.child__content-first-last {
+	display: none;
+	background-color: #77608d;
+	border-radius: 0 0 20px 20px;
+	padding: 10px 0px;
+}
+.child__subtitle-1:hover ~ .child__content-first-last, .child__content-first-last:hover {
+	display: block;
+}
+.child__list-1 li:first-child{
+	color: red;
+	font-weight: 900;
+}
+.child__list-1 li:last-child{
+	color: rgb(199, 179, 0);
+	font-weight: 900;
+}
+.child__subtitle-2 {
+	padding: 15px;
+	background-color: #7A956B;
+	border-radius: 20px 20px 0 0;
+	font-weight: 700;
+}
+.child__content-nth {
+	display: none;
+	background-color: #77608d;
+	border-radius: 0 0 20px 20px;
+	padding: 10px 0px;
+}
+.child__subtitle-2:hover ~ .child__content-nth, .child__content-nth:hover {
+	display: block;
+}
+.child__list-2 li:nth-child(even) {
+	color: rgb(0, 194, 219);
+	font-weight: 900;
+}
+.child__list-2 li:nth-child(1) {
+	color: #794f45;
+	font-weight: 900;
+}
+.child__list-2 li:nth-child(5n) {
+	color: green;
+	font-weight: 900;
+}
+.volume__label {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.volume__flex-box:not(:last-child) {
+	margin-bottom: 10px;
+}
+.flex-box {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+}
+.flex-box__point {
+	width: 12px;
+	height: 50px;
+	border: 2px solid #000;
+	border-radius: 5px;
+	transition: all 0.3s ease 0s;
+}
+.flex-box__point:nth-child(19):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(18):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(17):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(16):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(15):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(14):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(13):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(12):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(11):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(10):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(9):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(8):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(7):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(20),
+.flex-box__point:nth-child(20):hover {
+	background-color: #15ff00;
+}
+.flex-box__point:nth-child(18):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(17):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(16):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(15):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(14):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(13):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(12):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(11):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(10):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(9):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(8):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(7):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(19),
+.flex-box__point:nth-child(19):hover {
+	background-color: #13d801;
+}
+.flex-box__point:nth-child(17):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(16):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(15):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(14):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(13):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(12):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(11):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(10):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(9):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(8):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(7):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(18),
+.flex-box__point:nth-child(18):hover{
+	background-color: #0fb600;
+}
+.flex-box__point:nth-child(16):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(15):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(14):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(13):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(12):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(11):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(10):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(9):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(8):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(7):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(17),
+.flex-box__point:nth-child(17):hover{
+	background-color: #88ad00;
+}
+.flex-box__point:nth-child(15):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(14):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(13):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(12):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(11):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(10):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(9):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(8):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(7):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(16),
+.flex-box__point:nth-child(16):hover{
+	background-color: #a1ce00;
+}
+.flex-box__point:nth-child(14):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(13):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(12):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(11):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(10):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(9):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(8):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(7):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(15),
+.flex-box__point:nth-child(15):hover{
+	background-color: #bfd400;
+}
+.flex-box__point:nth-child(13):hover~.flex-box__point:nth-child(14),
+.flex-box__point:nth-child(12):hover~.flex-box__point:nth-child(14),
+.flex-box__point:nth-child(11):hover~.flex-box__point:nth-child(14),
+.flex-box__point:nth-child(10):hover~.flex-box__point:nth-child(14),
+.flex-box__point:nth-child(9):hover~.flex-box__point:nth-child(14),
+.flex-box__point:nth-child(8):hover~.flex-box__point:nth-child(14),
+.flex-box__point:nth-child(7):hover~.flex-box__point:nth-child(14),
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(14),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(14),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(14),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(14),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(14),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(14),
+.flex-box__point:nth-child(14):hover{
+	background-color: #e5ff00;
+}
+.flex-box__point:nth-child(12):hover~.flex-box__point:nth-child(13),
+.flex-box__point:nth-child(11):hover~.flex-box__point:nth-child(13),
+.flex-box__point:nth-child(10):hover~.flex-box__point:nth-child(13),
+.flex-box__point:nth-child(9):hover~.flex-box__point:nth-child(13),
+.flex-box__point:nth-child(8):hover~.flex-box__point:nth-child(13),
+.flex-box__point:nth-child(7):hover~.flex-box__point:nth-child(13),
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(13),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(13),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(13),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(13),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(13),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(13),
+.flex-box__point:nth-child(13):hover{
+	background-color: #ffe600;
+}
+.flex-box__point:nth-child(11):hover~.flex-box__point:nth-child(12),
+.flex-box__point:nth-child(10):hover~.flex-box__point:nth-child(12),
+.flex-box__point:nth-child(9):hover~.flex-box__point:nth-child(12),
+.flex-box__point:nth-child(8):hover~.flex-box__point:nth-child(12),
+.flex-box__point:nth-child(7):hover~.flex-box__point:nth-child(12),
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(12),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(12),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(12),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(12),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(12),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(12),
+.flex-box__point:nth-child(12):hover{
+	background-color: #ffd000;
+}
+.flex-box__point:nth-child(10):hover~.flex-box__point:nth-child(11),
+.flex-box__point:nth-child(9):hover~.flex-box__point:nth-child(11),
+.flex-box__point:nth-child(8):hover~.flex-box__point:nth-child(11),
+.flex-box__point:nth-child(7):hover~.flex-box__point:nth-child(11),
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(11),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(11),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(11),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(11),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(11),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(11),
+.flex-box__point:nth-child(11):hover{
+	background-color: #ffae00;
+}
+.flex-box__point:nth-child(9):hover~.flex-box__point:nth-child(10),
+.flex-box__point:nth-child(8):hover~.flex-box__point:nth-child(10),
+.flex-box__point:nth-child(7):hover~.flex-box__point:nth-child(10),
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(10),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(10),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(10),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(10),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(10),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(10),
+.flex-box__point:nth-child(10):hover{
+	background-color: #ff8800;
+}
+.flex-box__point:nth-child(8):hover~.flex-box__point:nth-child(9),
+.flex-box__point:nth-child(7):hover~.flex-box__point:nth-child(9),
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(9),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(9),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(9),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(9),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(9),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(9),
+.flex-box__point:nth-child(9):hover{
+	background-color: #ff6600;
+}
+.flex-box__point:nth-child(7):hover~.flex-box__point:nth-child(8),
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(8),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(8),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(8),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(8),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(8),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(8),
+.flex-box__point:nth-child(8):hover{
+	background-color: #ff3c00;
+}
+.flex-box__point:nth-child(6):hover~.flex-box__point:nth-child(7),
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(7),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(7),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(7),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(7),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(7),
+.flex-box__point:nth-child(7):hover{
+	background-color: #ff0000;
+}
+.flex-box__point:nth-child(5):hover~.flex-box__point:nth-child(6),
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(6),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(6),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(6),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(6),
+.flex-box__point:nth-child(6):hover{
+	background-color: #e20000;
+}
+.flex-box__point:nth-child(4):hover~.flex-box__point:nth-child(5),
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(5),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(5),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(5),
+.flex-box__point:nth-child(5):hover{
+	background-color: #bd0000;
+}
+.flex-box__point:nth-child(3):hover~.flex-box__point:nth-child(4),
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(4),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(4),
+.flex-box__point:nth-child(4):hover{
+	background-color: #920000;
+}
+.flex-box__point:nth-child(2):hover~.flex-box__point:nth-child(3),
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(3),
+.flex-box__point:nth-child(3):hover{
+	background-color: #6b0000;
+}
+.flex-box__point:nth-child(1):hover~.flex-box__point:nth-child(2),
+.flex-box__point:nth-child(2):hover{
+	background-color: #440000;
+}
+.flex-box__point:nth-child(1):hover{
+	background-color: #000;
+}
+.flex-box2 {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+}
+.flex-box2__point {
+	width: 12px;
+	height: 50px;
+	border: 2px solid #000;
+	border-radius: 5px;
+}
+.flex-box2__point div {
+	width: 8px;
+	border-radius: 2px;
+	height: 46px;
+	opacity: 0.2;
+	transition: all 0.3s ease 0s;
+}
+.flex-box2__point:nth-child(20) div {
+	background-color: #15ff00;
+}
+.flex-box2__point:nth-child(19) div {
+	background-color: #13d801;
+}
+.flex-box2__point:nth-child(18) div {
+	background-color: #0fb600;
+}
+.flex-box2__point:nth-child(17) div {
+	background-color: #88ad00;
+}
+.flex-box2__point:nth-child(16) div {
+	background-color: #a1ce00;
+}
+.flex-box2__point:nth-child(15) div {
+	background-color: #bfd400;
+}
+.flex-box2__point:nth-child(14) div {
+	background-color: #e5ff00;
+}
+.flex-box2__point:nth-child(13) div {
+	background-color: #ffe600;
+}
+.flex-box2__point:nth-child(12) div {
+	background-color: #ffd000;
+}
+.flex-box2__point:nth-child(11) div {
+	background-color: #ffae00;
+}
+.flex-box2__point:nth-child(10) div {
+	background-color: #ff8800;
+}
+.flex-box2__point:nth-child(9) div {
+	background-color: #ff6600;
+}
+.flex-box2__point:nth-child(8) div {
+	background-color: #ff3c00;
+}
+.flex-box2__point:nth-child(7) div {
+	background-color: #ff0000;
+}
+.flex-box2__point:nth-child(6) div {
+	background-color: #e20000;
+}
+.flex-box2__point:nth-child(5) div {
+	background-color: #bd0000;
+}
+.flex-box2__point:nth-child(4) div {
+	background-color: #920000;
+}
+.flex-box2__point:nth-child(3) div {
+	background-color: #6b0000;
+}
+.flex-box2__point:nth-child(2) div {
+	background-color: #440000;
+}
+.flex-box2__point:nth-child(1) div {
+	background-color: #000;
+}
+.flex-box2__point:nth-child(19):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(19):hover div,
+.flex-box2__point:nth-child(18):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(18):hover div,
+.flex-box2__point:nth-child(17):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(17):hover div,
+.flex-box2__point:nth-child(16):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(16):hover div,
+.flex-box2__point:nth-child(15):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(15):hover div,
+.flex-box2__point:nth-child(14):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(14):hover div,
+.flex-box2__point:nth-child(13):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(13):hover div,
+.flex-box2__point:nth-child(12):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(12):hover div,
+.flex-box2__point:nth-child(11):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(11):hover div,
+.flex-box2__point:nth-child(10):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(10):hover div,
+.flex-box2__point:nth-child(9):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(9):hover div,
+.flex-box2__point:nth-child(8):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(8):hover div,
+.flex-box2__point:nth-child(7):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(7):hover div,
+.flex-box2__point:nth-child(6):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(6):hover div,
+.flex-box2__point:nth-child(5):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(5):hover div,
+.flex-box2__point:nth-child(4):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(4):hover div,
+.flex-box2__point:nth-child(3):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(3):hover div,
+.flex-box2__point:nth-child(2):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(2):hover div,
+.flex-box2__point:nth-child(1):hover~.flex-box2__point div,
+.flex-box2__point:nth-child(1):hover div,
+.flex-box2__point:nth-child(20):hover div {
+	opacity: 1;
+}
+.flex-box2__label, .flex-box__label {
+	font-size: 20px;
+	font-weight: 700;
+	margin-right: 20px;
+	display: flex;
+	align-items: center;
+}
+.flex-box2__label {
+	margin-right: 30px;
+}
+.before-after__label {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.content-b-a > * {
+	margin-bottom: 10px;
+}
+.content-b-a__text p::before {
+	content: "Я BEFORE";
+	display: inline-block;
+	margin-right: 10px;
+	border: 1px solid #000;
+}
+.content-b-a__text p::after {
+	content: "Я AFTER";
+	display: inline-block;
+	margin-left: 10px;
+	border: 1px solid #000;
+}
+.content-b-a__icons::before{
+	content: '';
+	display: inline-block;
+	background: url('../img/icons/check.svg') 0 0 / 16px no-repeat;
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+.content-b-a__icons::after{
+	content: '';
+	display: inline-block;
+	background: url('../img/icons/star.svg') 0 0 / 16px no-repeat;
+	width: 16px;
+	height: 16px;
+	margin-left: 8px;
+}
+.content-b-a__decor img {
+	width: 400px;
+	opacity: 0.99;
+}
+.content-b-a__decor {
+	position: relative;
+	z-index: 5;
+}
+.content-b-a__decor::before{
+	content: '';
+	position: absolute;
+	top: 20px;
+	left: 15%;
+	width: 200px;
+	height: 200px;
+	background: url('../img/images/dog2.jpg') 0 0 / 200px no-repeat;
+}
+.content-b-a__decor::after{
+	content: '';
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 65%;
+	width: 150px;
+	height: 150px;
+	border-radius: 40px;
+	background-color: #ff8888b0;
+}
+.content-b-a__filter img {
+	width: 100%;
+}
+.content-b-a__filter {
+	position: relative;
+}
+.content-b-a__filter::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	width: 50%;
+	height: 97%;
+	background-color: #77608da4;
+}
+.content-b-a__list {
+	counter-reset: item;
+}
+.content-b-a__list li:not(:last-child) {
+	margin-bottom: 5px;
+}
+.content-b-a__list li::before {
+	counter-increment: item;
+	content: counter(item) ") ";
+	display: inline-block;
+	margin-right: 5px;
+	color: rgb(0, 67, 168);
+	transition: all 0.5s ease 0s;
+}
+.content-b-a__list li:hover::before {
+	transform: scale(1.5) rotate(360deg);
+}
+.game__intro {
+	display: inline-block;
+	font-size: 40px;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+.game__intro:hover {
+	text-shadow: 0px 0px 15px red;
+}
+.level {
+	font-size: 0;
+	display: none;
+}
+.level:target {
+	display: block;
+}
+.level__image {
+	margin-bottom: 20px;
+}
+.level__image img {
+	max-width: 50%;
+}
+.level__start {
+	width: 50px;
+	height: 20px;
+	background-color: #ce1212;
+}
+.level__line-1 {
+	display: inline-block;
+	width: 985px;
+	height: 20px;
+	background-color: #34ce0d;
+	visibility: hidden;
+}
+.level__start:hover~.level__line-1,
+.level__line-1:hover,
+.level__line-1:hover~.level__point-1 {
+	visibility: visible;
+}
+.level__point-1 {
+	display: inline-block;
+	width: 15px;
+	height: 20px;
+	background-color: #34ce0d;
+	visibility: hidden;
+}
+.level__line-2 {
+	margin: 0 0 0 auto;
+	width: 15px;
+	height: 150px;
+	background-color: #34ce0d;
+	visibility: hidden;
+}
+.level__point-2 {
+	width: 15px;
+	height: 5px;
+	background-color: #34ce0d;
+	margin: 0 0 0 auto;
+	visibility: hidden;
+}
+.level__point-1:hover~.level__line-2,
+.level__point-1:hover,
+.level__line-2:hover~.level__point-2 {
+	visibility: visible;
+}
+.level__line-3 {
+	margin: 0 0 0 auto;
+	width: 1000px;
+	height: 5px;
+	background-color: #34ce0d;
+	visibility: hidden;
+}
+.level__point-3 {
+	width: 20px;
+	height: 20px;
+	background-color: #ce1212;
+	visibility: hidden;
+}
+.level__point-2:hover~.level__line-3,
+.level__line-2:hover {
+	visibility: visible;
+}
+.level__point-2:hover,
+.level__line-3:hover,
+.level__line-3:hover~.level__point-3,
+.level__point-3:hover {
+	visibility: visible;
+}
+.level__winner img {
+	width: 50%;
+	margin-top: -230px;
+	visibility: hidden;
+}
+.level__point-3:hover~.level__winner img {
+	visibility: visible;
+}
