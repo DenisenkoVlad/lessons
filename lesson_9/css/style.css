@@ -1,0 +1,16 @@
+@import "null.css";
+
+body {
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+[class*="__container"] {
+	max-width: 930px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+.main__container img{
+	width: 100%;
+}
